@@ -1,0 +1,12 @@
+---
+title: "LSU"
+author: "Kirti Agrawal"
+date: "23/09/2021"
+output: pdf_document
+---
+
+```{bash}
+git --version
+R --version
+```
+

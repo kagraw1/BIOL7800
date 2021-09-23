@@ -10,4 +10,13 @@ git --version
 R --version
 ```
 
+# **Introduction**
 
+
+I  *Kirti Agrawal* Graduate student doing PHD in *Louisiana State University*. My major is Engineering Sciences. Mainly my work will focus on _lipodomic profiling_ of brain in diseases like Cancer, Alzimer's disease. I am from the Southern part of India.My undergrad major was _biotechnology_.
+
+
+```
+**_DOB_** (8/17/1995)
+EmailID (kagraw1@lsu.edu)
+```

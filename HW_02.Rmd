@@ -1,0 +1,77 @@
+---
+title: "HW_02"
+output: pdf_document
+---
+
+Homework 2
+
+1.Fix each of the following common data frame subsetting errors:
+mtcars[mtcars$cyl < 6]
+mtcars[-1:3,]
+mtcars[mtcars$cyl = 8, ]
+mtcars[mtcars$cyl == 4 | 6, ]
+ 
+```{r}
+mtcars[mtcars$cyl <= 6,]
+mtcars[-c(1:3),]
+mtcars[mtcars$cyl == 8, ]
+mtcars[mtcars$cyl == 4 | mtcars$cyl == 6, ]
+```
+
+2.Why does the following code generated five missing values?
+x = 1:5
+x[NA]
+
+```{r}
+ "In contrast to NA_real NA has logical type and logical vectors are recycled
+ to the same length as the vectorbeing subset. 
+ For the case x[NA] is recycled to x[NA, NA, NA, NA, NA]."
+```
+
+3.Why does mtcars[1:15] return an error? How does it differ from mtcars[1:15, ]?
+
+```{r}
+"mtcars in general has 11 columns. When subsetting of dataframe is being done
+with two vector, like mtcars[1:15, ], than the two dimentional subsetting comes
+into role, and the first index refered to as row. Whereas mtcar[1:15] would
+return a data frame that contains first 15 columns of the dataset, hence the
+index will be out of bounds and an erroroccurs."
+```
+
+4.Explain how does the following code work.
+x = matrix(c(1:3, NA, 5:7, NA, NA), nrow = 3)
+x[is.na(x)] = 0
+
+```{r}
+" x[is.na(x)] = 0, is a syntax to replace NA with 0 in the matrix x
+x = matrix(c(1:3, NA, 5:7, NA, NA), x matrix with some values as NA
+nrow = 3, total number of rows is 3
+RESULT would be 	
+  V1 V2 V3
+1 1  0  7
+2 2  5  0
+3 3  6  0
+Hence all the NA values were replaced by 0"
+```
+
+5.Load the Car Road Tests dataset (in R, run data("mtcars"), ?mtcars), then add a new column named as mpg_2 for the mtcars data frame. You can use if ... else ... or ifelse or any other functions that can get the job done. This new column will categorize mpg into four categories using the thresholds below:
+mpg_2 category	Thresholds
+Low	mpg < 16
+Low_intermediate	16 <= mpg < 21
+Intermediate_high	21 <= mpg < 26
+High	26 <= mpg
+
+```{r}
+mtcars
+head(mtcars)
+vec_mpg <- 
+ifelse(mtcars$mpg < 16, "Low",
+ifelse(mtcars$mpg < 21, "Low_intermediate",
+ifelse(mtcars$mpg < 26, "Intermediate_high",
+ifelse(mtcars$mpg > 26, "High", NA))))
+vec_mpg_2 <- mtcars$mpg
+mtcars["mpg_2"] <- vec_mpg
+subset(mtcars)
+```
+
+

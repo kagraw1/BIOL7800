@@ -1,0 +1,70 @@
+---
+title: "Homework4"
+author: "Kirti Agrawal"
+date: "28/10/2021"
+output: pdf_document
+---
+
+Answer1
+```{r}
+library(httr) 
+library(rvest) 
+library(tidyr)
+url = 'https://introdatasci.dlilab.com/schedule_materials/'
+website = GET(url)
+print(content(website))
+tbls <- html_nodes(content(website), "table")
+print(length(tbls))
+tbl2<-html_table(tbls[[1]],fill=TRUE)
+print(tbl2)
+```
+
+Answer2
+```{r}
+library(httr) 
+library(rvest) 
+library(tidyr)
+url = 'https://introdatasci.dlilab.com/schedule_materials/'
+website = GET(url)
+print(content(website))
+tbls <- html_nodes(content(website), "table")
+print(length(tbls))
+vec = c(tbls)
+tbl2<-html_table(tbls[[1]],fill=TRUE)
+print(tbl2)
+date = tbl2$Date
+x = format(date, format = "%B %d")
+x
+x_formatted = as.Date(x, format = "%B %d")
+class(x_formatted)
+month = format(x_formatted, "%b")
+tbl2['month'] = month
+tbl2
+Day = format(x_formatted, "%d")
+tbl2['Day'] = Day
+tbl2
+```
+
+Answer3
+```{r}
+number_of_lectures_each_month = tbl2 %>%
+group_by(month) %>%
+summarise(No._of_lectures = n())
+number_of_lectures_each_month
+arrange(number_of_lectures_each_month, desc(No._of_lectures))
+```
+
+Answer4
+```{r}
+x = select(tbl2, "Topic")
+str_split(x, " ", simplify = TRUE)
+pattern = "[:punct:]"
+replacement = ""
+library(stringr)
+y = str_replace_all(x, pattern, replacement)
+a = str_replace_all(y, pattern = '\n', replacement = "")
+words = unlist(a, recursive = TRUE, use.names = TRUE)
+words
+l = table(words)
+l
+```

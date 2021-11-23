@@ -1,0 +1,106 @@
+---
+title: "Final"
+author: "Kirti Agrawal"
+date: "23/11/2021"
+output: pdf_document
+---
+
+"Prostate Cancer: Alternative site on chemo resistant gene for the treatment
+
+Proposal Summary:
+Prostate cancer also known as Prostatic Carcinoma. This type of cancer is generally asymptomatic. This led to the enlargement of the prostate specially in the old age group males, also cause difficulty to urinate. Prostate specific antigens are present in the blood and with the increase in their level, the possibility of the Prostate cancer increases. This can be used to diagnose the cancer or the possibility of its occurrence in an individual. Many researchers found genetic markers for the prostate cancer known as SNPs (Single Nucleotide Polymorphisms) responsible to cause the disease at the genetic level. SNPs are not the epigenetic modification but they could change some motif of gene locus which could favor some epigenetic factors and they might lead to the activation or the repression of the gene, which in turn can lead to the silencing or expression of the gene. Even there are many genes are chemo resistant and expresses even after the chemotherapy. By using cancer data via Cbioportal(https://www.cbioportal.org/), we can find the genes responsible for the disease and merge all the available raw data in GEPIA2 (http://gepia2.cancer-pku.cn/#index) to get the gene correlation. While this gene correlation analysis we can find the Chemo resistant gene and find gate keeper residues sites or second suppressor sites depending on open or close confirmation. 
+
+Project Definition:
+The overall aim of the project is to find the chemo resistant gene that is responsible for Prostate cancer and find gate keeper residues sites or second suppressor sites depending on open or close confirmation. The expected scope of this project is to use the novel research is that sphingolipids regulate Prostate cancer cells response to chemotherapy [1]. It will identify the gene’s non chemo resistant drug targeted site. The expected result would be to have identified a chemo resistant gene that expresses even after the therapy, and a gate keeper residues site or second suppressor site of this gene.
+
+
+Background:
+Phrase 1
+How can a novel and chemo resistant gene specific drug targeted site for Prostate cancer be identified?
+Phrase 2
+If the Cbio portal data for Prostate cancer are integrated, then a promising chemo resistant gene and its targeted sites will be identified that will significantly lead to find the gate keeper residues site or second suppressor site, as it will be the potential drug target. Prostate cancer cells sometimes travel to the bones and other sites where they start growing again, this is known as metastasis.
+Prostate Cancer 
+Cancer is characterized by abnormal cell growths that destroy other cells and tissue.  Prostate cancer is the presence of these cell growths or tumors in the prostate gland. This type of cancer is also known as Prostatic Carcinoma. It can be cured if detected in early stage using radiotherapy or radical prostatectomy [2, 3]. If the patient is diagnosed with stage 4 Prostate cancer than more aggressive treatment is required like chemotherapy, surgery, and high intensity drugs [4]. Screening of such type of cancer is questionable as in early stage its growth progress is slow and undetectable. Whereas, when this growth turns to tumors, it causes death [5]. Chemotherapy is not the standard treatment used for prostate cancer but it is used when prostate cancer has spread outside the gland and other therapy is not working. It is recommended to be used with hormone therapy specially in the metastasis prostate cancer [2]. Therefore, even after surgery, patients may still suffer lifelong cognitive side effects. Prostate cancer incidence and mortality is highly dependent on the age of the male. Prostate cancer is common in all over the world [Figure1&2]. The rate of death and the number of prostate cancers will get double by 2040 as compared to 2018 prostate cancer statistics [8]. There has been no method to prevent prostate cancer but there are ways through which the risk can be reduced, example healthy diet, increasing the intake of green vegetables and also fruits, ore exercise would also help [6]. Prostate cancer severity increases with age and recurrences are noticed. Researchers are using label-free method to predict prostate cancer in the patients with high risk of recurrence [9].
+  
+Figure:1&2 Map showing estimated age-standardized incidence rates and mortality rates for prostate cancer worldwide in 2018, in males including all ages, respectively. Created with mapchart.net. Data obtained from Globocan 2018 [7]. Alterations in Lipin gene may cause aggressiveness and drug resistance [1].  Still there is a gap in knowledge that how these lead to drug resistance and also mediate lipid level changes in prostate cancer. As occurrence of the Prostate cancer is very common and for the last stage of PC, chemotherapy is required with the other therapies but due to chemo resistant genes, it has become difficult to use these to treat them. So, there is a dire need to identify chemo resistant genes and to overcome drug resistance finding of gene’s gatekeeper residues sites or second suppressor sites depending on open or close confirmation, which provides accessible sites for drug binding.
+A Dynamic View of Cancer
+Drug discovery for cancer is usually based on a “static” view of a tumor, and it has since been proven that this viewpoint is flawed. It is more beneficial to view cancer as a dynamic biological system. This disease is constantly evolving, and treatments should follow the progression of the disease. Cancer is categorized by stages I-IV, with Stage I characterized by mild symptoms and Stage IV as metastatic cancer. By taking a topological analysis of biological networks from STRING-dB it is possible to measure the prognosis of the disease. 
+Pathway enrichment analysis:
+Pathway analysis leads to the knowledge about genes involved or the proteins in already known pathway. In this project we will use LIPEA (Lipid Pathway enrichment Analysis), a web-based tool used for the detection of over-represented analyzed lipid signature and the enriched biological pathway [1]. By taking the data from MetaboAnalyst, pathway analysis will be performed in LIPEA. Through this analysis we will get to know about the regulatory lipid pathways and their associated gene. Using LC-ESI-MS/MS, pathway analysis can be validated [1]. 
+Identification of gene alteration in human patients:
+The correlation between circulating lipids and the clinical drug resistant prostate cancer has not been well identified but the increase in these selective lipids lead to the decrease in the survival [1]. Blood lipids level may have a high influence risk in causing prostate cancer [10]. Maximum males are predisposed to develop certain forms of cancer-based on their gender, environment, genotypes, age, and life-style. Therefore, it is beneficial to find genes responsible for the cancer and how they are involved in causing the cancer. Alteration of gene can be identified using Cbioportal as it is the source provides the multidimensional cancer genomic data sets [11]. Using GEPIA2 which is a web tool that can be used to compare the customized data and the public cancer genomic data (TCGA or GTEx). Through which single gene analysis and Boxplot can be identified [12].
+ 
+Figure 3:  Identification of lipidomic profiles associated with drug-resistant prostate cancer cells. a Alterations in lipin genes LPIN1, LPIN2 and LPIN3 within four types of prostate cancer from sixteen studies. Amplification is the major alteration in all types, excluding general prostate cancer. b Overall survivability in prostate cancer patients with (red) or without (blue) lipin gene alteration. There are 28 samples with alterations in LPIN1, 37 samples from 30 patients with alterations in LPIN2 and 27 samples out of 26 patients with LPIN3 alterations. c mRNA expression, accurate transcript quantification from RNA-Seq data (RSEM) as a function of putative copy-number alterations in mutation type. There are 10,712 samples from 32 studies on the horizontal axis, 6961 samples from 16 studies on the vertical axis and 6909 samples from 16 studies at the intersection of the two axes. The figures were generated from cBioPortal for Cancer Genomics. d Variation in expression levels of lipin genes were observed in patients with (red) and without (green) prostate cancer. The method for differential analysis was a one-way ANOVA, using disease state (Tumor or Normal) as variable for calculating differential expression. Pair-wise gene expression correlations, using the Pearson method, of the lipin genes were analysed based on TCGA and GTEx databases. The non-log scale for calculation and use the log-scale axis for visualization. The figures were generated from GEPIA 2. PRAD prostate adenocarcinoma, T tumor, N normal, TPM transcripts per million [1]
+
+
+
+Computer aided finding of protein sites that can used as potential drug targets:
+The gene might have open or close confirmation and according to which the gate keeper residues sites or second suppressor sites are identified [22]. The gatekeeper residue site is the ATP binding pocket of protein kinase [13] of the protein. The repressor sites are present on the promotors, where the drug can come, bind and leads to the inhibits the expression of the gene. Gene expression give rise to the specific protein. The protein structure and its analysis can be done using SWISS-MODEL or CREATIVE BIOLABS. 
+ 
+Figure 4: Identification of drug target. [27]
+Experimental Design/Research Plan Goals:
+	Major Parts of the Project and Goals
+This project can be split into 3 different parts. The first part is the bioinformatics aspect focused on Identifying drug resistant gene via pathway enrichment analysis. The second would be to compare all genes data available in cBioPortal data sets of Prostate cancer and then using GEPIA2 for the comparison between the normal and diseased data. Then deploy algorithms and statistical analyses on the genomic data to provide a “dynamic view” of the disease. Lastly, once the gene is found, the target’s gatekeeper residue site or second repressor site will be identified using Bioinformatics tools which can be used as the potential drug target.
+	Variables
+Data will be categorized according to the studies chosen. In general, this includes a control group of healthy patients, and diseased patients from Cbio portal. This data is particularly of prostate cancer. These groups will be documented for future reference.
+	Materials
+	Laptop/ PC
+	Online Resources for experiment
+•	LIPEA
+•	MetaboAnalyst
+•	STRING-dB
+•	Cbioportal
+•	GEPIA2
+•	SWISS-MODEL/ CREATIVE BIOLABS
+•	PubChem
+•	RCSB Protein Data Bank
+•	GeneLink
+•	ZINC database
+•	Cytoscape
+•	GraphPad software
+
+	Procedure: 
+•	Identification of the prognosis of the disease using STRING-db
+•	Collection of raw data using MetaboAnalyst and pathway analysis done using LIPEA
+•	Identified genes were queried in cBioPortal. 
+•	Different analysis will be done in cBioPortal like, Cancer type detailing, overall survivability test, variation in levels of gene, and differential expression analysis.
+•	GEPIA2 is used to plot the Boxplot and used for single gene expression using TCGA or GTEx data for normal and diseased patients.
+•	PDB data base is used to download the protein of interest and Using SWISS-MODEL potential drug sites are identified.
+•	Confirm results and report them.
+Risk/Safety Concerns:
+There are no relevant safety risks associated with this project, as it is purely computational research. This project will not require any physical experimentation, any and all experimentation will be conducted online.
+Data Analysis:
+The majority of the data will be analyzed through online databases and existing bioinformatics tools. For the bioinformatics aspect, this includes: using the GEPIA2 tool and CBioportal itself; and Cytoscape to analyze the results from STRING-db. Statistical analysis will be done using GraphPad Prism.
+Potential Roadblocks: 
+Most roadblocks involve knowledge gaps in correlation between the lipids and resistance to drug treatments.  These roadblocks can be solved by reading more literature. Major roadblock is the knowledge gap in using the different Bioinformatics tool. This can be solved by reading more literature, watching video tutorials, contacting a professional in the field, and taking online courses (for example: on Coursera or Udemy). Other potential roadblocks may include a lack of access to certain datasets and unexpected results in experimentation. The former can be solved by emailing professionals and requesting access to their dataset. The latter can be solved by analyzing errors and making multiple iterations in each aspect of the project. It is also crucial to record every step in the experimentation process to easily identify the source of error.
+
+
+References Cited:
+1. Ingram, L.M., Finnerty, M.C., Mansoura, M. et al. Identification of lipidomic profiles associated with drug-resistant prostate cancer cells. Lipids Health Dis 20, 15 (2021). https://doi.org/10.1186/s12944-021-01437-5
+2. https://www.cancer.org/cancer/prostate-cancer/treating/by-stage.html
+3. https://pasadenacyberknife.com/is-prostate-cancer-curable/
+4. PDQ Adult Treatment Editorial Board. Prostate Cancer Treatment (PDQ®): Health Professional Version. 2021 Sep 3. In: PDQ Cancer Information Summaries [Internet]. Bethesda (MD): National Cancer Institute (US); 2002-. Available from: https://www.ncbi.nlm.nih.gov/books/NBK66036/
+5. Catalona, William J. “Prostate Cancer Screening.” The Medical clinics of North America vol. 102,2 (2018): 199-214. doi:10.1016/j.mcna.2017.11.001
+6. Rawla, Prashanth. “Epidemiology of Prostate Cancer.” World journal of oncology vol. 10,2 (2019): 63-89. doi:10.14740/wjon1191
+7. Ferlay J EM, Lam F, Colombet M, Mery L, Pineros M, Znaor A, Soerjomataram I. et al. Global cancer observatory: cancer today. Lyon, France: International Agency for Research on Cancer. Available from: https://gco.iarc.fr/today, Accessed 02 February 2019.
+8.  Ferlay J EM, Lam F, Colombet M, Mery L, Pineros M, Znaor A, Soerjomataram I. et al. Global cancer observatory: cancer tomorrow. Lyon, France: International Agency for Research on Cancer. Available from: https://gco.iarc.fr/tomorrow, Accessed 02 February 2019. 
+9. Sridharan, S., Macias, V., Tangella, K. et al. Prediction of Prostate Cancer Recurrence Using Quantitative Phase Imaging. Sci Rep 5, 9976 (2015). https://doi.org/10.1038/srep09976
+10. Kok, D., van Roermund, J., Aben, K. et al. Blood lipid levels and prostate cancer risk; a cohort study. Prostate Cancer Prostatic Dis 14, 340–345 (2011). https://doi.org/10.1038/pcan.2011.30
+11. Cerami, Ethan et al. “The cBio cancer genomics portal: an open platform for exploring multidimensional cancer genomics data.” Cancer discovery vol. 2,5 (2012): 401-4. doi:10.1158/2159-8290.CD-12-0095
+12. Tang, Zefang et al. “GEPIA2: an enhanced web server for large-scale expression profiling and interactive analysis.” Nucleic acids research vol. 47,W1 (2019): W556-W560. doi:10.1093/nar/gkz430
+13. Peter J. Alaimo, Zachary A. Knight, Kevan M. Shokat, Targeting the gatekeeper residue in phosphoinositide 3-kinases, Bioorganic & Medicinal Chemistry, Volume 13, Issue 8, 2005, Pages 2825-2836, ISSN 0968-0896, https://doi.org/10.1016/j.bmc.2005.02.021.
+14. Reznikoff, W S et al. “The location of the repressor binding sites in the lac operon.” Proceedings of the National Academy of Sciences of the United States of America vol. 71,6 (1974): 2314-8. doi:10.1073/pnas.71.6.2314
+15. Aiwonegbe, Anthony E., and Julius U. Iyasele. "Antimicrobial effects of Methanolic Extract of Phyllanthus amarus on Selected Clinical and Environmental Bacteria."
+16. Gayatriben B. Patel, Parita Rakholiya, Toral Shindhal, Sunita Varjani, N.M. Tabhani, Kamleshkumar R. Shah, Lipolytic Nocardiopsis for reduction of pollution load in textile industry effluent and SWISS model for structural study of lipase, Bioresource Technology, Volume 341, 2021, 125673, ISSN 0960-8524, https://doi.org/10.1016/j.biortech.2021.125673.
+17. Acevedo, A., et al., LIPEA: Lipid Pathway Enrichment Analysis. bioRxiv, 2018: p. 274969.
+18. George, Daniel J et al. “Clinical roundtable monograph: new and emerging treatments for advanced prostate cancer.” Clinical advances in hematology & oncology : H&O vol. 9,6 (2011): 1-11; discussion 11-5.
+19. Chandrasekar, Thenappan et al. “Mechanisms of resistance in castration-resistant prostate cancer (CRPC).” Translational andrology and urology vol. 4,3 (2015): 365-80. doi:10.3978/j.issn.2223-4683.2015.05.02
+20. Koelmel, Jeremy P et al. “LipidMatch: an automated workflow for rule-based lipid identification using untargeted high-resolution tandem mass spectrometry data.” BMC bioinformatics vol. 18,1 331. 10 Jul. 2017, doi:10.1186/s12859-017-1744-3
+21. Ponnusamy, Suriyan et al. “Sphingolipids and cancer: ceramide and sphingosine-1-phosphate in the regulation of cell death and drug resistance.” Future oncology (London, England) vol. 6,10 (2010): 1603-24. doi:10.2217/fon.10.116
+22. Escribá, Pablo V. “Membrane-lipid therapy: a new approach in molecular medicine.” Trends in molecular medicine vol. 12,1 (2006): 34-43. doi:10.1016/j.molmed.2005.11.004
+23. Wang, X Z et al. “Aberrant sphingolipid signaling is involved in the resistance of prostate cancer cell lines to chemotherapy.” Cancer research vol. 59,22 (1999): 5842-8.
+24. Sorvina, Alexandra et al. “Lipid profiles of prostate cancer cells.” Oncotarget vol. 9,85 35541-35552. 30 Oct. 2018, doi:10.18632/oncotarget.26222
+25. Lin, Hui-Ming et al. “A distinct plasma lipid signature associated with poor prognosis in castration-resistant prostate cancer.” International journal of cancer vol. 141,10 (2017): 2112-2120. doi:10.1002/ijc.30903
+26. Agmon, Eran, and Brent R Stockwell. “Lipid homeostasis and regulated cell death.” Current opinion in chemical biology vol. 39 (2017): 83-89. doi:10.1016/j.cbpa.2017.06.002
+27.https://www.technologynetworks.com/drug-discovery/lists/drugtarget-binding-recent-research-developments-350197
+"
